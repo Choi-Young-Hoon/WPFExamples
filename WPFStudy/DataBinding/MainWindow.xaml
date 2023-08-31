@@ -1,0 +1,47 @@
+﻿<Window x:Class="DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- 자동으로 행 크기가 지정됨 -->
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>    <!-- 위의 두줄 Auto가 크기를 지정하고 남은 전부를 차지함-->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        
+        <!-- Binding시 OneWay는 소스 -> XAML 로만 바인딩됨.-->
+        <!-- 양방향 Binding시에는 TwoWay 사용. -->
+        <Label Name="nameLabel" Margin="2">_Name:</Label>
+        <TextBox Name="nameText" Grid.Column="1" Margin="2" 
+                 Text="{Binding Name, Mode=TwoWay}"/>
+
+        <Label Name="ageLabel" Grid.Column="1" Grid.Row="1" Margin="2">_Age:</Label>
+        <TextBox Name="ageText" Grid.Row="1" Grid.Column="1" Margin="2"
+                 Text="{Binding Age, Mode=OneWay}"/>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
+            <Button Content="_Show..." Click="Button_Click"/>
+            
+            <!-- Contol Binding -->
+            <Label Name="nameTextBinding"
+                   Content="{Binding ElementName=nameText, Path=Text}"/>
+            
+        </StackPanel>
+
+
+
+    </Grid>
+
+
+</Window>

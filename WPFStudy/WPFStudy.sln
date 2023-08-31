@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridStudy", "WPFStudy\GridS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonStyleTriggerInXAML", "ButtonStyleTriggerInXAML\ButtonStyleTriggerInXAML.csproj", "{C00BB06F-FCFB-48A1-98B5-89D3ECDD0DCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding\DataBinding.csproj", "{A8191448-EEB1-495F-80E2-01A9AD50CE0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C00BB06F-FCFB-48A1-98B5-89D3ECDD0DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00BB06F-FCFB-48A1-98B5-89D3ECDD0DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00BB06F-FCFB-48A1-98B5-89D3ECDD0DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8191448-EEB1-495F-80E2-01A9AD50CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8191448-EEB1-495F-80E2-01A9AD50CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8191448-EEB1-495F-80E2-01A9AD50CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8191448-EEB1-495F-80E2-01A9AD50CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
