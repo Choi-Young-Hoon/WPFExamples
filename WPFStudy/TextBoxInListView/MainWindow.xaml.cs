@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Resource
+namespace TextBoxInListView
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,14 +23,21 @@ namespace Resource
         public MainWindow()
         {
             InitializeComponent();
-            
+            personListView.Items.Add(new Person() { Name = "CHOI1", Age = 100 });
+            personListView.Items.Add(new Person() { Name = "CHOI2", Age = 200 });
+            personListView.Items.Add(new Person() { Name = "CHOI3", Age = 300 });
         }
 
-        private void changeResourceBotton_Click(object sender, RoutedEventArgs e)
+        class Person
         {
-            //SolidColorBrush brush = Brushes.Yellow;
-            //Application.Current.Resources["redBlushResource"] = brush;
-            this.Resources["redBlushResource"] = new SolidColorBrush(Colors.Yellow);
+            public string Name { get; set; }
+            public int Age { get; set; }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Person person = (Person)((Button)sender).DataContext;
+            MessageBox.Show($"{person.Name}, {person.Age}");
         }
     }
 }

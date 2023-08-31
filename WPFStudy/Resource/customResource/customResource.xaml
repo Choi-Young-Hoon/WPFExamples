@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- 커스텀 스타일을 작성한 후 App.xaml 파일에 Application.Resource로 customResource.xaml 리소스를 등록해야한다. -->
+
+    <Style x:Key="CustomButtonStyle" 
+           TargetType="{x:Type Button}" 
+           BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Background" Value="green"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Name="customBorder" 
+                                    BorderThickness="2"
+                                    Padding="4, 4"
+                                    BorderBrush="Yellow"
+                                    CornerRadius="10"
+                                    Background="Red">
+                        <ContentPresenter x:Name="contentPresenter"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Focusable="False"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="customBorder" Property="BorderBrush" Value="Blue"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>
