@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFStudy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="450">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0"
+               Content="Employee Info" FontSize="15" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <Label Content="Name:" VerticalAlignment="Center" Width="70"/>
+            <TextBox Name="txtName" Text="ChoiYH" VerticalAlignment="Center" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <Label Content="ID" VerticalAlignment="Center" Width="70"/>
+            <TextBox Name="txtCity" Text="421" VerticalAlignment="Center" Width="50"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+            <Label Content="Age" VerticalAlignment="Center" Width="70"/>
+            <TextBox Name="txtState" Text="32" VerticalAlignment="Center" Width="50"/>
+        </StackPanel>
     </Grid>
 </Window>
