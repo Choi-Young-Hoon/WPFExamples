@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBinding", "DataBinding\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resource", "Resource\Resource.csproj", "{B1F2A65C-05DE-40DC-9E88-42CDD76B4B5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxInListView", "TextBoxInListView\TextBoxInListView.csproj", "{4110F169-9CD6-499B-BAC4-4104FDAFBA2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListViewInControl", "TextBoxInListView\ListViewInControl.csproj", "{4110F169-9CD6-499B-BAC4-4104FDAFBA2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlStyle", "ControlStyle\ControlStyle.csproj", "{25739514-8C7A-47D8-B506-B21F728DF7EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4110F169-9CD6-499B-BAC4-4104FDAFBA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4110F169-9CD6-499B-BAC4-4104FDAFBA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4110F169-9CD6-499B-BAC4-4104FDAFBA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25739514-8C7A-47D8-B506-B21F728DF7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25739514-8C7A-47D8-B506-B21F728DF7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25739514-8C7A-47D8-B506-B21F728DF7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25739514-8C7A-47D8-B506-B21F728DF7EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
